@@ -17,9 +17,8 @@ const router = createRouter({
             path: '/steps',
             name: 'steps',
             component: () => import('../views/StepsView.vue')
-        },
-
+        }
     ]
-})
+});
 
 export default router;
