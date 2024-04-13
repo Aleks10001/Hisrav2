@@ -1,15 +1,15 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <RoadmapComponent/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import RoadmapComponent from './components/RoadmapComponent.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    RoadmapComponent
   }
 }
 </script>
