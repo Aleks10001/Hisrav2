@@ -13,6 +13,11 @@ const router = createRouter({
             name: 'roadmap',
             component: () => import('../views/RoadmapView.vue')
         },
+        {
+            path: '/steps',
+            name: 'steps',
+            component: () => import('../views/StepsView.vue')
+        },
 
     ]
 })
