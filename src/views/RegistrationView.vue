@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col items-center justify-center px-6 pt-8 mx-auto md:h-screen pt:mt-0 dark:bg-gray-900">
     <RouterLink to="/" class="flex items-center justify-center mb-8 text-2xl font-semibold lg:mb-10 dark:text-white">
-      <img src="@/assets/logo.png" class="h-11" alt="RCONNECT Logo">
+      <img src="../assets/logo.png" class="h-11" alt="RCONNECT Logo">
     </RouterLink>
     <div class="items-center justify-center lg:w-1/3 mb-6 shadow-2xl bg-white rounded-lg lg:flex md:mt-0 lg:max-w-screen-lg 2xl:max:max-w-screen-lg xl:p-0 dark:bg-gray-800">
       <div v-if="!showConfirmLayout" class="w-full p-6 space-y-8 sm:p-8 lg:p-8">

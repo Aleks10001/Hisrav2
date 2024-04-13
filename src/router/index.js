@@ -15,7 +15,7 @@ const index = createRouter({
         {
             path: '/login',
             name: 'login',
-            component: () => import('../components/LoginComponent/LoginView.vue'),
+            component: () => import('../views/LoginView.vue'),
             meta: {
                 requiresAuth: false
             }
@@ -23,7 +23,7 @@ const index = createRouter({
         {
             path: '/register',
             name: 'register',
-            component: () => import('../components/RegistrationComponent/RegistrationView.vue'),
+            component: () => import('../views/RegistrationView.vue'),
             meta: {
                 requiresAuth: false
             }
