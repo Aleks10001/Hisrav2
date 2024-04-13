@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    @apply transition-colors;
+    @apply duration-200;
+    @apply ease-in-out;
+}
+
+/* For Chrome, Safari, and newer Edge */
+::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+    height:8px;
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-transparent; /* Color of the track (the area behind the scrollbar) */
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-gray-600;
+    border-radius: 4px; /* Rounded corners of the thumb */
+    border: none; /* Border around the thumb */
+}
