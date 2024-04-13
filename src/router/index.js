@@ -1,13 +1,12 @@
-import { createRouter, createWebHistory } from 'vue-router';
-// import { checkAuth } from '../core/auth';
+import { createRouter, createWebHistory } from 'vue-router'
 
-const index = createRouter({
-    history: createWebHistory("/"),
+const router = createRouter({
+    history: createWebHistory(process.env.BASE_URL),
     routes: [
         {
             path: '/',
             name: 'home',
-            component: () => import('../components/HelloWorld.vue'),
+            component: () => import('../views/HomeView.vue'),
             meta: {
                 requiresAuth: false
             }
@@ -28,6 +27,22 @@ const index = createRouter({
                 requiresAuth: false
             }
         },
+        {
+            path: '/roadmap',
+            name: 'roadmap',
+            component: () => import('../views/RoadmapView.vue'),
+            meta: {
+                requiresAuth: false
+            }
+        },
+        {
+            path: '/steps',
+            name: 'steps',
+            component: () => import('../views/StepsView.vue'),
+            meta: {
+                requiresAuth: false
+            }
+        },
     ]
 });
 
@@ -40,4 +55,4 @@ index.beforeEach((to, from, next) => {
     }
 });
 
-export default index;
+export default router;
